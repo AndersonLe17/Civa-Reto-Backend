@@ -1,0 +1,33 @@
+INSERT INTO marcas (mar_id, mar_nom)
+VALUES (1, 'Volvo'),
+       (2, 'Scania'),
+       (3, 'Fiat'),
+       (4, 'Mercedes Benz'),
+       (5, 'Renault');
+
+INSERT INTO buses (bus_num, bus_pla, bus_fec_cre, bus_car, bus_mar_id, bus_est)
+VALUES ('CIVA-24060001', 'B1X456', now(), 'Asientos reclinables, sistema de climatización, gran capacidad de equipaje, diseño seguro y cómodo para largas distancias.', 1, 'ACTIVO'),
+       ('CIVA-24060002', 'F3Z821', now(), 'Asientos reclinables, sistema de climatización, gran capacidad de equipaje, diseño seguro y cómodo para largas distancias.', 1, 'ACTIVO'),
+       ('CIVA-24060003', 'F3Z821', now(), 'Tecnología avanzada, motores eficientes, interiores espaciosos, y sistemas de seguridad ideales para recorridos turísticos.', 2, 'ACTIVO'),
+       ('CIVA-24060004', 'F3Z821', now(), 'Eficiencia en consumo de combustible, diseño compacto, asientos cómodos y confiables para viajes cortos y medianos.', 3, 'ACTIVO'),
+       ('CIVA-24070001', 'F3Z821', now(), 'Asientos reclinables, sistema de climatización, gran capacidad de equipaje, diseño seguro y cómodo para largas distancias.', 1, 'ACTIVO'),
+       ('CIVA-24070002', 'F3Z821', now(), 'Tecnología avanzada, motores eficientes, interiores espaciosos, y sistemas de seguridad ideales para recorridos turísticos.', 2, 'ACTIVO'),
+       ('CIVA-24070003', 'F3Z821', now(), 'Tecnología avanzada, motores eficientes, interiores espaciosos, y sistemas de seguridad ideales para recorridos turísticos.', 2, 'ACTIVO'),
+       ('CIVA-24070004', 'F3Z821', now(), 'Económicos, versátiles, buena maniobrabilidad y comodidad suficiente para excursiones turísticas accesibles.', 5, 'ACTIVO'),
+       ('CIVA-24080001', 'F3Z821', now(), 'Elegancia, acabados de lujo, sistemas de entretenimiento y comodidad superior para el turismo premium.', 4, 'ACTIVO'),
+       ('CIVA-24080002', 'F3Z821', now(), 'Asientos reclinables, sistema de climatización, gran capacidad de equipaje, diseño seguro y cómodo para largas distancias.', 1, 'ACTIVO'),
+       ('CIVA-24080003', 'F3Z821', now(), 'Tecnología avanzada, motores eficientes, interiores espaciosos, y sistemas de seguridad ideales para recorridos turísticos.', 2, 'ACTIVO'),
+       ('CIVA-24080004', 'F3Z821', now(), 'Tecnología avanzada, motores eficientes, interiores espaciosos, y sistemas de seguridad ideales para recorridos turísticos.', 2, 'ACTIVO'),
+       ('CIVA-24080005', 'F3Z821', now(), 'Eficiencia en consumo de combustible, diseño compacto, asientos cómodos y confiables para viajes cortos y medianos.', 3, 'ACTIVO'),
+       ('CIVA-24090001', 'F3Z821', now(), 'Eficiencia en consumo de combustible, diseño compacto, asientos cómodos y confiables para viajes cortos y medianos.', 3, 'ACTIVO'),
+       ('CIVA-24090002', 'F3Z821', now(), 'Eficiencia en consumo de combustible, diseño compacto, asientos cómodos y confiables para viajes cortos y medianos.', 3, 'ACTIVO'),
+       ('CIVA-24090003', 'F3Z821', now(), 'Asientos reclinables, sistema de climatización, gran capacidad de equipaje, diseño seguro y cómodo para largas distancias.', 1, 'ACTIVO'),
+       ('CIVA-24090004', 'F3Z821', now(), 'Económicos, versátiles, buena maniobrabilidad y comodidad suficiente para excursiones turísticas accesibles.', 5, 'ACTIVO'),
+       ('CIVA-24090005', 'F3Z821', now(), 'Económicos, versátiles, buena maniobrabilidad y comodidad suficiente para excursiones turísticas accesibles.', 5, 'ACTIVO'),
+       ('CIVA-24100001', 'F3Z821', now(), 'Eficiencia en consumo de combustible, diseño compacto, asientos cómodos y confiables para viajes cortos y medianos.', 3, 'ACTIVO'),
+       ('CIVA-24100002', 'F3Z821', now(), 'Elegancia, acabados de lujo, sistemas de entretenimiento y comodidad superior para el turismo premium.', 4, 'ACTIVO'),
+       ('CIVA-24100003', 'F3Z821', now(), 'Elegancia, acabados de lujo, sistemas de entretenimiento y comodidad superior para el turismo premium.', 4, 'ACTIVO'),
+       ('CIVA-24110001', 'F3Z821', now(), 'Elegancia, acabados de lujo, sistemas de entretenimiento y comodidad superior para el turismo premium.', 4, 'ACTIVO'),
+       ('CIVA-24110002', 'F3Z821', now(), 'Eficiencia en consumo de combustible, diseño compacto, asientos cómodos y confiables para viajes cortos y medianos.', 3, 'ACTIVO'),
+       ('CIVA-24110003', 'F3Z821', now(), 'Asientos reclinables, sistema de climatización, gran capacidad de equipaje, diseño seguro y cómodo para largas distancias.', 1, 'ACTIVO'),
+       ('CIVA-24110004', 'F3Z821', now(), 'Elegancia, acabados de lujo, sistemas de entretenimiento y comodidad superior para el turismo premium.', 4, 'ACTIVO');
