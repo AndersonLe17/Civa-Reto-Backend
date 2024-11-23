@@ -1,4 +1,10 @@
 package pe.com.civa.repository;
 
-public interface UsuarioRepository extends org.springframework.data.jpa.repository.JpaRepository<pe.com.civa.domain.entities.Usuario, java.lang.Integer> {
-  }
+import org.springframework.data.jpa.repository.JpaRepository;
+import pe.com.civa.domain.entities.Usuario;
+
+import java.util.Optional;
+
+public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
+    Optional<Usuario> findByUsuNomIgnoreCase(String usuNom);
+}

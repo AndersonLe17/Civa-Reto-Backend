@@ -1,1 +1,26 @@
-spring.application.name=Reto-Practicante-FullStack-Civa
+application:
+  title: '@project.name@'
+  version: '@project.version@'
+
+server:
+  port: 8080
+  error:
+    include-stacktrace: never
+
+api:
+  security:
+    expiration: 15
+    secret: ${JWT_SECRET:UjN0MEMxdjRGdWxsU3Q0Y2s=}
+    issue: Civa
+
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/civa-buses}
+    username: ${DB_USERNAME:postgres}
+    password: ${DB_PASSWORD:171819}
+  jpa:
+    database: postgresql
+    hibernate:
+      ddl-auto: none
+    show-sql: true

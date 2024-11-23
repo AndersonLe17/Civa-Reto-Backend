@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class RetoPracticanteFullStackCivaApplication {
+public class CivaApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(RetoPracticanteFullStackCivaApplication.class, args);
+        SpringApplication.run(CivaApplication.class, args);
     }
 
 }

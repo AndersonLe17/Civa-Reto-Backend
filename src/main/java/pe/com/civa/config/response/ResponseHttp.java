@@ -1,4 +1,4 @@
-package com.totospz.eshop.config.response;
+package pe.com.civa.config.response;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -16,30 +16,6 @@ public class ResponseHttp {
                         .payload(payload)
                         .build(),
                 HttpStatus.OK
-        );
-    }
-
-    public static <T> ResponseEntity okHandler(List<ErrorResponse> errors) {
-        return new ResponseEntity<>(
-                EntityResponse.builder()
-                        .code(HttpStatus.OK.value())
-                        .status(HttpStatus.OK.getReasonPhrase())
-                        .message("Error")
-                        .errors(errors)
-                        .build(),
-                HttpStatus.OK
-        );
-    }
-
-    public static <T> ResponseEntity created(T payload) {
-        return new ResponseEntity<>(
-                EntityResponse.builder()
-                        .code(HttpStatus.CREATED.value())
-                        .status(HttpStatus.CREATED.getReasonPhrase())
-                        .message("Success")
-                        .payload(payload)
-                        .build(),
-                HttpStatus.CREATED
         );
     }
 

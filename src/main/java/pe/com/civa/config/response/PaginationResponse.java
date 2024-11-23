@@ -1,4 +1,4 @@
-package com.totospz.eshop.config.response;
+package pe.com.civa.config.response;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

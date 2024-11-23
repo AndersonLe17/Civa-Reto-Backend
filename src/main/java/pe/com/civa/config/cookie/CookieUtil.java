@@ -1,4 +1,4 @@
-package com.totospz.eshop.config.cookie;
+package pe.com.civa.config.cookie;
 
 import jakarta.servlet.http.Cookie;
 import jakarta.servlet.http.HttpServletRequest;
@@ -13,14 +13,7 @@ public class CookieUtil {
         cookie.setSecure(secure);
         cookie.setHttpOnly(httpOnly);
         cookie.setMaxAge(maxAge);
-        cookie.setDomain(response.getHeader("Host"));
         cookie.setPath(path);
-        response.addCookie(cookie);
-    }
-
-    public static void clear(HttpServletRequest request, HttpServletResponse response, String name) {
-        Cookie cookie = WebUtils.getCookie(request, name);
-        cookie.setMaxAge(0);
         response.addCookie(cookie);
     }
 
@@ -29,7 +22,6 @@ public class CookieUtil {
         cookie.setSecure(secure);
         cookie.setHttpOnly(httpOnly);
         cookie.setMaxAge(0);
-        cookie.setDomain(response.getHeader("Host"));
         cookie.setPath(path);
         response.addCookie(cookie);
     }

@@ -1,4 +1,7 @@
 package pe.com.civa.repository;
 
-public interface BusRepository extends org.springframework.data.jpa.repository.JpaRepository<pe.com.civa.domain.entities.Bus, java.lang.Integer> {
-  }
+import org.springframework.data.jpa.repository.JpaRepository;
+import pe.com.civa.domain.entities.Bus;
+
+public interface BusRepository extends JpaRepository<Bus, Long> {
+}

@@ -1,20 +1,19 @@
-package com.totospz.eshop.controller;
+package pe.com.civa.controller;
 
-import com.totospz.eshop.config.response.ResponseHttp;
-import com.totospz.eshop.service.AuthService;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.security.core.Authentication;
 import org.springframework.web.bind.annotation.CookieValue;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import pe.com.civa.config.response.ResponseHttp;
+import pe.com.civa.service.AuthService;
 
 @RestController
+@RequestMapping
 @RequiredArgsConstructor
-@RequestMapping("/auth")
 public class AuthController {
 
     private final AuthService authService;
@@ -24,10 +23,15 @@ public class AuthController {
         return ResponseHttp.ok(authService.login(authentication, response));
     }
 
-    @PreAuthorize("hasAuthority('SCOPE_REFRESH_TOKEN')")
-    @PostMapping("/refresh")
-    public ResponseEntity<?> refresh(@CookieValue("auth") String auth, HttpServletResponse response) {
-        return ResponseHttp.ok(authService.refresh(auth, response));
+    @PostMapping("/auth")
+    public ResponseEntity<?> auth(@CookieValue("jwt") String jwt) throws Exception {
+        return ResponseHttp.ok(authService.auth(jwt));
+    }
+
+    @PostMapping("/auth/logout")
+    public ResponseEntity<?> logout(HttpServletResponse response) {
+        authService.logout(response);
+        return ResponseHttp.ok(null);
     }
 
 }

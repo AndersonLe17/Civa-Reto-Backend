@@ -1,8 +1,6 @@
-package com.totospz.eshop.config.exception;
+package pe.com.civa.config.exception;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.totospz.eshop.config.response.EntityResponse;
-import com.totospz.eshop.config.response.ErrorResponse;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -10,6 +8,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
+import pe.com.civa.config.response.EntityResponse;
+import pe.com.civa.config.response.ErrorResponse;
 
 import java.io.IOException;
 import java.util.List;
